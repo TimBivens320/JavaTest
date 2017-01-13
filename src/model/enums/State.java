@@ -56,11 +56,12 @@ public enum State {
     WYOMING("Wyoming", "WY");
 
     private final String _name;
+    private final String _abbreviation;
+
     public String get_name() {
         return _name;
     }
 
-    private final String _abbreviation;
     public String get_abbreviation() {
         return _abbreviation;
     }

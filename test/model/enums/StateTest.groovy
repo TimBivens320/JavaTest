@@ -1,6 +1,5 @@
 package model.enums
 
-
 class StateTest extends GroovyTestCase {
     void testGet() {
         assertEquals(State.ALABAMA, State.get("AL"))
