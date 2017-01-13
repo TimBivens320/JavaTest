@@ -55,25 +55,25 @@ public enum State {
     WISCONSIN("Wisconsin", "WI"),
     WYOMING("Wyoming", "WY");
 
-    private final String _name;
-    private final String _abbreviation;
+    private final String name;
+    private final String abbreviation;
 
-    public String get_name() {
-        return _name;
+    public String getName() {
+        return name;
     }
 
-    public String get_abbreviation() {
-        return _abbreviation;
+    public String getAbbreviation() {
+        return abbreviation;
     }
 
     State(String name, String abbreviation) {
-        this._name = name;
-        this._abbreviation = abbreviation;
+        this.name = name;
+        this.abbreviation = abbreviation;
     }
 
     public static State get(String abbreviation) {
         for (State state : State.values()) {
-            if (Objects.equals(state._abbreviation, abbreviation.toUpperCase())) {
+            if (Objects.equals(state.abbreviation, abbreviation.toUpperCase())) {
                 return state;
             }
         }

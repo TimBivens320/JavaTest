@@ -1,20 +1,20 @@
 package model.enums
 
 class CreditCardTypeTest extends GroovyTestCase {
-    void testGet_name() {
-        assertEquals("Visa", CreditCardType.VISA.get_name())
-        assertEquals("MasterCard", CreditCardType.MASTERCARD.get_name())
+    void testGetName() {
+        assertEquals("Visa", CreditCardType.VISA.getName())
+        assertEquals("MasterCard", CreditCardType.MASTERCARD.getName())
     }
 
-    void testGet_abbreviation() {
-        assertEquals("V", CreditCardType.VISA.get_abbreviation())
-        assertEquals("MC", CreditCardType.MASTERCARD.get_abbreviation())
+    void testGetAbbreviation() {
+        assertEquals("V", CreditCardType.VISA.getAbbreviation())
+        assertEquals("MC", CreditCardType.MASTERCARD.getAbbreviation())
     }
 
     void testGet() {
         assertEquals(CreditCardType.VISA, CreditCardType.get("V"))
         assertEquals(CreditCardType.MASTERCARD, CreditCardType.get("MC"))
-        assertEquals(null, CreditCardType.get("ZZ"))
+        assertNull(CreditCardType.get("ZZ"))
     }
 
     void testGetLowerCase() {

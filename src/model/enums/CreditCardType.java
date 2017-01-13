@@ -6,25 +6,25 @@ public enum CreditCardType {
     VISA ("Visa", "V"),
     MASTERCARD ("MasterCard", "MC");
 
-    private final String _name;
-    private final String _abbreviation;
+    private final String name;
+    private final String abbreviation;
 
-    public String get_name() {
-        return _name;
+    public String getName() {
+        return name;
     }
 
-    public String get_abbreviation() {
-        return _abbreviation;
+    public String getAbbreviation() {
+        return abbreviation;
     }
 
     CreditCardType(String name, String abbreviation) {
-        this._name = name;
-        this._abbreviation = abbreviation;
+        this.name = name;
+        this.abbreviation = abbreviation;
     }
 
     public static CreditCardType get(String abbreviation) {
         for (CreditCardType creditCardType : CreditCardType.values()) {
-            if (Objects.equals(creditCardType._abbreviation, abbreviation.toUpperCase())) {
+            if (Objects.equals(creditCardType.abbreviation, abbreviation.toUpperCase())) {
                 return creditCardType;
             }
         }

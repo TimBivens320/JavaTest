@@ -5,49 +5,49 @@ import model.enums.CreditCardType;
 import java.util.Date;
 
 public class CreditCard {
-    private CreditCardType _creditCardType;
-    private String _cardNumber;
-    private Date _expirationDate;
-    private String _cardholderName;
-    private String _securityCode;
+    private CreditCardType creditCardType;
+    private String cardNumber;
+    private Date expirationDate;
+    private String cardholderName;
+    private String securityCode;
 
-    public CreditCardType get_creditCardType() {
-        return _creditCardType;
+    public CreditCardType getCreditCardType() {
+        return creditCardType;
     }
 
-    public void set_creditCardType(CreditCardType _creditCardType) {
-        this._creditCardType = _creditCardType;
+    public void setCreditCardType(CreditCardType _creditCardType) {
+        this.creditCardType = _creditCardType;
     }
 
-    public String get_cardNumber() {
-        return _cardNumber;
+    public String getCardNumber() {
+        return cardNumber;
     }
 
-    public void set_cardNumber(String _cardNumber) {
-        this._cardNumber = _cardNumber;
+    public void setCardNumber(String _cardNumber) {
+        this.cardNumber = _cardNumber;
     }
 
-    public Date get_expirationDate() {
-        return _expirationDate;
+    public Date getExpirationDate() {
+        return expirationDate;
     }
 
-    public void set_expirationDate(Date _expirationDate) {
-        this._expirationDate = _expirationDate;
+    public void setExpirationDate(Date _expirationDate) {
+        this.expirationDate = _expirationDate;
     }
 
-    public String get_cardholderName() {
-        return _cardholderName;
+    public String getCardholderName() {
+        return cardholderName;
     }
 
-    public void set_cardholderName(String _cardholderName) {
-        this._cardholderName = _cardholderName;
+    public void setCardholderName(String _cardholderName) {
+        this.cardholderName = _cardholderName;
     }
 
-    public String get_securityCode() {
-        return _securityCode;
+    public String getSecurityCode() {
+        return securityCode;
     }
 
-    public void set_securityCode(String _securityCode) {
-        this._securityCode = _securityCode;
+    public void setSecurityCode(String _securityCode) {
+        this.securityCode = _securityCode;
     }
 }
