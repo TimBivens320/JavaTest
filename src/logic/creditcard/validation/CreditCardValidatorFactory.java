@@ -6,7 +6,7 @@ import logic.creditcard.validation.validators.VisaValidator;
 import model.enums.CreditCardType;
 
 public class CreditCardValidatorFactory {
-    public static CreditCardValidator get(CreditCardType creditCardType) {
+    public CreditCardValidator get(CreditCardType creditCardType) {
         if (creditCardType == CreditCardType.VISA) {
             return new VisaValidator();
         } else if (creditCardType == CreditCardType.MASTERCARD) {
