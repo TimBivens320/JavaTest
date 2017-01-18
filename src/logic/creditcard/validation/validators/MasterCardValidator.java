@@ -10,4 +10,9 @@ public class MasterCardValidator extends AbstractCreditCardValidator {
     boolean isCorrectLength(String cardNumber) {
         return cardNumber.length() == 16;
     }
+
+    @Override
+    boolean passesCheckDigitValidation(String cardNumber) {
+        return false;
+    }
 }

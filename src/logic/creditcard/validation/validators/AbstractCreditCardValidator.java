@@ -9,7 +9,8 @@ abstract class AbstractCreditCardValidator implements CreditCardValidator {
     public boolean isValid(CreditCard creditCard) {
         String cardNumber = creditCard.getCardNumber();
         return beginsWithCorrectDigit(cardNumber)
-                && isCorrectLength(cardNumber);
+                && isCorrectLength(cardNumber)
+                && passesCheckDigitValidation(cardNumber);
     }
 
     @Override
@@ -20,4 +21,6 @@ abstract class AbstractCreditCardValidator implements CreditCardValidator {
     abstract boolean beginsWithCorrectDigit(String cardNumber);
 
     abstract boolean isCorrectLength(String cardNumber);
+
+    abstract boolean passesCheckDigitValidation(String cardNumber);
 }
