@@ -7,11 +7,17 @@ import java.util.Date;
 abstract class AbstractCreditCardValidator implements CreditCardValidator {
     @Override
     public boolean isValid(CreditCard creditCard) {
-        return false;
+        String cardNumber = creditCard.getCardNumber();
+        return beginsWithCorrectDigit(cardNumber)
+                && isCorrectLength(cardNumber);
     }
 
     @Override
     public boolean isExpired(Date expirationDate) {
         return expirationDate.before(new Date());
     }
+
+    abstract boolean beginsWithCorrectDigit(String cardNumber);
+
+    abstract boolean isCorrectLength(String cardNumber);
 }
